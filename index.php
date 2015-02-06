@@ -28,7 +28,7 @@ define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 		<div id="content_bottom">
 			<div id="cover_container">
 			</div>
-			<div class="button"><a href="http://beta.vluds.eu/">DECOUVRIR</a></div>
+			<a href="http://beta.vluds.eu/">DECOUVRIR</a>
 		</div>
 	</body>
 </html>
