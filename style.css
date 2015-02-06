@@ -7,11 +7,18 @@ html, body {
 	text-align: center;
 }
 
-div {
-	position: relative;
-	height: 50%;
-	width: 100%;
+#content_top
+{
+	height: 35%;
+	padding-bottom: 10px;
+	padding-top: 5%;
+}
+
+#content_bottom
+{
 	overflow: hidden;
+	position: relative;
+	height: 65%;
 }
 
 #logo
@@ -21,18 +28,25 @@ div {
 	background-position: center center;
 	background-size: contain;
 	width: 100%;
-	height: 35%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	height: 45%;
+	box-sizing: border-box;
+	margin-bottom: 3%;
 }
 
-img {
+.button
+{
+	position: absolute;
+	top: 20%;
 	width: 100%;
-	height: auto;
 }
 
-img.logo {
-	max-width: 1500px;
+#cover_container
+{
+	background-image: url('preview.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 100%;
 }
 
 p {
@@ -50,11 +64,6 @@ p {
 
 a, a:link, a:visited, a:active {
 	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	margin: auto;
 	padding: 15px;
 	width: 150px;

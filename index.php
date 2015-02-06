@@ -18,16 +18,17 @@ define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 		<link rel="shortcut icon" href="favicon.ico"/>
 	</head>
 	<body>
-		<div>
+		<div id="content_top">
 			<div id="logo"></div>
 			<p>
 				Découvrez Vluds_blue la nouvelle version de vluds.eu<br/><br/>
 				'Made with our little hands for you ♥'
 			</p>
 		</div>
-		<div>
-			<img src="<?php echo WEBROOT; ?>preview.png" alt="preview" />
-			<a href="http://beta.vluds.eu/">DECOUVRIR</a>
+		<div id="content_bottom">
+			<div id="cover_container">
+			</div>
+			<div class="button"><a href="http://beta.vluds.eu/">DECOUVRIR</a></div>
 		</div>
 	</body>
 </html>
