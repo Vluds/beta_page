@@ -33,7 +33,7 @@ define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 		</div>
 		<div>
 			<img src="<?php echo WEBROOT; ?>preview.png" alt="preview" />
-			<a href="#">DECOUVRIR</a>
+			<a href="http://beta.vluds.eu/">DECOUVRIR</a>
 		</div>
 	</body>
 </html>
