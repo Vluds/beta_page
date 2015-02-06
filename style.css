@@ -9,17 +9,27 @@ html, body {
 
 #content_top
 {
-	height: 50%;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 50%;
+	left: 0px;
+	right: 0px;
 	padding-bottom: 10px;
 	padding-top: 5%;
-	box-sizing: border-box;
 }
 
 #content_bottom
 {
 	overflow: hidden;
-	position: relative;
-	height: 50%;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 50%;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 
 #logo
@@ -94,3 +104,9 @@ a:hover {
 	color: #777777;
 	border: 1px solid #3498DB;
 }
+
+@media screen and (max-width: 600px) {
+
+	#cover_container {
+		background-size: 700px auto;
+	}
