@@ -27,9 +27,13 @@ define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 			</script>
 	</head>
 	<body>
-		<img src="<?php echo WEBROOT; ?>vluds.png" alt="logo" />
-		<p>Découvrez Vluds_blue la nouvelle version de vluds.eu</p>
-		<img src="<?php echo WEBROOT; ?>preview.png" alt="logo" />
-		<a href="#">DECOUVRIR</a>
+		<div>
+			<img class="logo" src="<?php echo WEBROOT; ?>vluds.png" alt="logo" />
+			<p>Découvrez Vluds_blue la nouvelle version de vluds.eu</p>
+		</div>
+		<div>
+			<img src="<?php echo WEBROOT; ?>preview.png" alt="preview" />
+			<a href="#">DECOUVRIR</a>
+		</div>
 	</body>
 </html>
