@@ -2,6 +2,12 @@
 
 define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 
+// Get site url.
+$siteProtocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),"https") === FALSE ? "http" : "https";
+$siteHost = $_SERVER['HTTP_HOST'];
+$siteUrl = $siteProtocol."://".$siteHost;
+define('URL', $siteUrl, true);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +22,31 @@ define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']), true);
 		<link href="style.css" rel="stylesheet" type='text/css'>
 
 		<link rel="shortcut icon" href="favicon.ico"/>
+
+		<!-- Social -->
+		<meta name="apple-mobile-web-app-title" content="Vluds - Create, Share, Discover.">
+
+		<!-- Open Graph data -->
+		<meta property="og:locale" content="FR" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Vluds - Create, Share, Discover." />
+		<meta property="og:description" content="Réseau social pour les personnes créatives. Venez découvrir des créations, rencontrez des personnes, discutez avec elles et partagez !" />
+		<meta property="og:url" content="<?php echo URL; ?>" />
+		<meta property="og:site_name" content="vluds" />
+		<meta property="og:image" content="<?php echo URL; ?>preview.jpg" />
+
+		<!-- Facebook spec -->
+		<meta property="article:publisher" content="<?php echo FACEBOOK; ?>" />
+
+		<!-- Twitter data -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:site" content="@vluds_" />
+		<meta property="twitter:domain" content="vluds" />
+		<meta property="twitter:creator" content="@vluds_" />
+		<meta property="twitter:image" content="<?php echo URL; ?>preview.jpg" />
+		<meta property="twitter:title" content="Vluds - Create, Share, Discover." />
+		<meta property="twitter:description" content="Réseau social pour les personnes créatives. Venez découvrir des créations, rencontrez des personnes, discutez avec elles et partagez !" />
+		<meta property="twitter:url" content="<?php echo URL; ?>" />
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
