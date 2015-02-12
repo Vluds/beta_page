@@ -33,7 +33,7 @@ define('URL', $siteUrl, true);
 		<meta property="og:description" content="Réseau social pour les personnes créatives. Venez découvrir des créations, rencontrez des personnes, discutez avec elles et partagez !" />
 		<meta property="og:url" content="<?php echo URL; ?>" />
 		<meta property="og:site_name" content="vluds" />
-		<meta property="og:image" content="<?php echo URL; ?>preview.jpg" />
+		<meta property="og:image" content="<?php echo URL; ?>/preview.jpg" />
 
 		<!-- Facebook spec -->
 		<meta property="article:publisher" content="<?php echo FACEBOOK; ?>" />
@@ -43,7 +43,7 @@ define('URL', $siteUrl, true);
 		<meta property="twitter:site" content="@vluds_" />
 		<meta property="twitter:domain" content="vluds" />
 		<meta property="twitter:creator" content="@vluds_" />
-		<meta property="twitter:image" content="<?php echo URL; ?>preview.jpg" />
+		<meta property="twitter:image" content="<?php echo URL; ?>/preview.jpg" />
 		<meta property="twitter:title" content="Vluds - Create, Share, Discover." />
 		<meta property="twitter:description" content="Réseau social pour les personnes créatives. Venez découvrir des créations, rencontrez des personnes, discutez avec elles et partagez !" />
 		<meta property="twitter:url" content="<?php echo URL; ?>" />
